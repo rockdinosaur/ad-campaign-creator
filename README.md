@@ -12,11 +12,13 @@
 ### Assumptions
 - No 'Access-Control-Allow-Origin' header is present on the provided API (https://shoelace-dev-test.azurewebsites.net/api/UserProducts) not setup for CORS
   - **Fix**: Installed "Allow-Control-Allow-Origin" Chrome extension
-  <p align="center"><img width=80% src="https://imgur.com/a/djYz13t"></p>
-
-  [CORS extension](https://imgur.com/a/djYz13t)
+  
+  ![CORS extension](images/chrome_extension.png)
+  
   - Entering the API's URL into `Load Products from API` and clicking `Go!` will populate form with the respective JSON data
-  [Pulling from API](https://imgur.com/a/E5vX3jx)
+  
+  ![Pulling from API](images/api_pull.png)
+  
 - Ad images are hosted so only their URL needs to be saved in text form
 - Products prices are pulled from the API but not displayed on the front end
 - Template type and campaign objective are not related
