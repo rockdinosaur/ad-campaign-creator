@@ -12,6 +12,8 @@
 ### Assumptions
 - No 'Access-Control-Allow-Origin' header is present on the provided API (https://shoelace-dev-test.azurewebsites.net/api/UserProducts) not setup for CORS
   - **Fix**: Installed "Allow-Control-Allow-Origin" Chrome extension
+  <p align="center"><img width=80% src="https://imgur.com/a/djYz13t"></p>
+
   [CORS extension](https://imgur.com/a/djYz13t)
   - Entering the API's URL into `Load Products from API` and clicking `Go!` will populate form with the respective JSON data
   [Pulling from API](https://imgur.com/a/E5vX3jx)
