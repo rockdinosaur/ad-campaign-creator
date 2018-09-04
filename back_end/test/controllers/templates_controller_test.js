@@ -8,9 +8,9 @@ describe('Templates controller', () => {
     request(app)
       .get('/api/templates/1')
       .then(res => {
-        // assert(res.body.adTitle === 'Default Title')
-        // assert(res.body.adCopy === 'Default Text')
-        // assert(res.body.campaignObjective === 'LeadGeneration')
+        assert(res.body.adTitle === 'Default Title')
+        assert(res.body.adCopy === 'Default Text')
+        assert(res.body.campaignObjective === 'LeadGeneration')
         done();
       })
     })
@@ -19,10 +19,10 @@ describe('Templates controller', () => {
     request(app)
       .get('/api/templates/2')
       .then(res => {
-        // assert(res.body.ads.length === 3)
-        // assert(res.body.ads[0].adTitle === 'Default Title1')
-        // assert(res.body.ads[0].adCopy === 'Default Text1')
-        // assert(res.body.campaignObjective === 'Conversions')
+        assert(res.body.ads.length === 3)
+        assert(res.body.ads[0].adTitle === 'Default Title1')
+        assert(res.body.ads[0].adCopy === 'Default Text1')
+        assert(res.body.campaignObjective === 'Conversions')
         done();
       })
     })
@@ -31,10 +31,10 @@ describe('Templates controller', () => {
     request(app)
       .get('/api/templates/3')
       .then(res => {
-        // assert(res.body.ads.length === 3)
-        // assert(res.body.ads[0].adTitle === 'Default Title1')
-        // assert(res.body.ads[0].adCopy === 'Default Text1')
-        // assert(res.body.campaignObjective === 'Impressions')
+        assert(res.body.ads.length === 3)
+        assert(res.body.ads[0].adTitle === 'Default Title1')
+        assert(res.body.ads[0].adCopy === 'Default Text1')
+        assert(res.body.campaignObjective === 'Impressions')
         done();
       })
     })

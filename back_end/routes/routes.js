@@ -6,7 +6,5 @@ module.exports = app => {
   app.get('/api/templates/2', TemplatesController.generateCarouselAd)
   app.get('/api/templates/3', TemplatesController.generateSliderAd)
 
-  app.options('/api/campaigns', )
   app.post('/api/campaigns', CampaignsController.create)
-
 };

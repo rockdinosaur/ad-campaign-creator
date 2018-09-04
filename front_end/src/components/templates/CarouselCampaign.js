@@ -127,7 +127,6 @@ class CarouselCampaign extends React.Component {
     this.props.handlePublishClick(this.state);
   }
 
-
   render() {
     return (
       <div>
