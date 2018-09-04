@@ -6,7 +6,6 @@ import CampaignHeader from './components/CampaignHeader';
 import SingleAdCampaign from './components/templates/SingleAdCampaign'
 import CarouselCampaign from './components/templates/CarouselCampaign'
 import SliderCampaign from './components/templates/SliderCampaign'
-import PublishDashboard from './components/PublishDashboard'
 
 import './App.css';
 
@@ -14,10 +13,14 @@ class App extends Component {
   handleSaveClick = data => {
     axios.post('http://localhost:3050/api/campaigns', data)
       .then(res => console.log(res.data))
+      .catch(err => console.log("Save error", err))
   }
 
   handlePublishClick = data => {
-    return data;
+    // axios.post('https://facebook.com/api', data)
+    //   .then(res => console.log("Published to Facebook successfully!"))
+    //   .catch(err => console.log("Publish error", err))
+    console.log(data);
   }
 
   render() {
@@ -42,6 +45,7 @@ class App extends Component {
               render={() =>
                 <CarouselCampaign
                   handleSaveClick={this.handleSaveClick}
+                  handlePublishClick={this.handlePublishClick}
                 />}
             />
             <Route
@@ -50,14 +54,7 @@ class App extends Component {
               render={() =>
                 <SliderCampaign
                   handleSaveClick={this.handleSaveClick}
-                />}
-            />
-            <Route
-              exact
-              path='/publish'
-              render={() =>
-                <PublishDashboard
-                  data={this.handlePublishClick()}
+                  handlePublishClick={this.handlePublishClick}
                 />}
             />
           </Switch>

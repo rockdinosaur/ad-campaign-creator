@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'
 
 class SingleAdCampaign extends React.Component {
   state = {
@@ -176,7 +175,7 @@ class SingleAdCampaign extends React.Component {
           <br></br>
           <div>
             <button onClick={this.handleSaveClick}>Save</button>
-            <Link onClick={this.handlePublishClick} to='/publish'>Publish</Link>
+            <button onClick={this.handlePublishClick}>Publish</button>
           </div>
         </form>
       </div>

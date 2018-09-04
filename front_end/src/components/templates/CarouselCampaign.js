@@ -122,9 +122,9 @@ class CarouselCampaign extends React.Component {
     this.props.handleSaveClick(this.state);
   }
 
-  handleSubmit = e => {
+  handlePublishClick = e => {
     e.preventDefault();
-    console.log(this.state);
+    this.props.handlePublishClick(this.state);
   }
 
 
@@ -218,7 +218,7 @@ class CarouselCampaign extends React.Component {
           <br></br>
           <div>
             <button onClick={this.handleSaveClick}>Save</button>
-            <input type="submit" value="Publish Campaign"/>
+            <button onClick={this.handlePublishClick}>Publish</button>
           </div>
         </form>
       </div>
