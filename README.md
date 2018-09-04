@@ -5,9 +5,10 @@
 
 ### Getting Started
 
-1) Navigate to the `front_end` directory -> perform an `npm install` -> `npm start` to load the front end panel (this will use port 3000).
-2) Navigate to the `back_end` directory -> perform an `npm install` -> `node index.js` to start Node server (this will use port 3050).
-3) **OPTIONAL** For data persistence, make sure MongoDB is running on `localhost`. The `save` button persists the current form data to MongoDB.
+1) Clone this repo.
+2) Navigate to the `front_end` directory -> perform an `npm install` -> `npm start` to load the front end panel (this will use port 3000).
+3) Navigate to the `back_end` directory -> perform an `npm install` -> `node index.js` to start Node server (this will use port 3050).
+4) **OPTIONAL** For data persistence, make sure MongoDB is running on `localhost`. The `save` button persists the current form data to MongoDB.
 
 ### Assumptions
 - No 'Access-Control-Allow-Origin' header is present on the provided API (https://shoelace-dev-test.azurewebsites.net/api/UserProducts) not setup for CORS
