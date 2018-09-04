@@ -17,6 +17,7 @@ class App extends Component {
   }
 
   handlePublishClick = data => {
+    // MADE UP ENDPOINT!
     // axios.post('https://facebook.com/api', data)
     //   .then(res => console.log("Published to Facebook successfully!"))
     //   .catch(err => console.log("Publish error", err))

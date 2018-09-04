@@ -4,7 +4,7 @@ import axios from 'axios';
 class SingleAdCampaign extends React.Component {
   state = {
     campaignTitle: '',
-    ad: { adTitle: 'Default Titleaefawea', adCopy: 'Default Text', imgURL: '' },
+    ad: { adTitle: 'Default Title', adCopy: 'Default Text', imgURL: '' },
     adNetworkID: '',
     status: 'Paused',
     campaignObjective: 'LeadGeneration',

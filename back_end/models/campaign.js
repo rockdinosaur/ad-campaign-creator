@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const CampaignSchema = new Schema({
+  campaignTitle: {
+    type: String,
+    required: [true, 'Campaign must have a title.']
+  },
   ads: {
     type: Array,
     validate: {
